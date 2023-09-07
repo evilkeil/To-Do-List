@@ -1,9 +1,4 @@
-import GetStorageItems from "./modules/storage/getStorage";
-import SetStorageItems from "./modules/storage/setStorage";
+import GetStorageItems from "./modules/storage/getStorage.js";
+import SetStorageItems from "./modules/storage/setStorage.js";
+import DeleteStorageItem from "./modules/storage/deleteStorageItems.js";
 
-
-const obj = {name:"kevin",age:26,food:"pizza"};
-
-SetStorageItems("user1",obj);
-
-console.log(GetStorageItems("user1"));
