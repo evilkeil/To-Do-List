@@ -5,7 +5,14 @@
 body {
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh; 
 }
+
+/* styles for the add project button  */
 
 .add-project-container {
     border: 1px solid black;
@@ -16,8 +23,8 @@ body {
     align-items: center;
     border-radius: 50%;
     position: fixed;
-    bottom: 5%;
-    right: 5%;
+    bottom: 3%;
+    right: 3%;
     font-size: 5rem;
     background-color: green;
 }
@@ -55,4 +62,12 @@ body {
 .add-project-container:hover .description {
     opacity: 1;
     visibility: visible;
+}
+
+/* styles for the main container  */
+
+#main-container{
+    border: 5px solid red;
+    width: 80%;
+    height: 100%;
 }
