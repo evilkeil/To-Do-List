@@ -30,6 +30,10 @@ module.exports = {
         test: /\.(png|svg|jpg|jpeg|gif|webp)$/i,
         type: 'asset/resource',
       },
+      {
+        test: /date-fns/,
+        use: 'expose-loader',
+      },
     ],
   },
   plugins: [
@@ -44,12 +48,5 @@ module.exports = {
       'date-fns': 'date-fns/esm',
     },
   },
-  module: {
-    rules: [
-      {
-        test: /date-fns/,
-        use: 'expose-loader',
-      },
-    ],
-  },
+
 };
