@@ -2,6 +2,16 @@
     box-sizing: border-box;
 }
 
+:root{
+        --mainColor:#ffffff;
+        --secondaryColor:#fce3f0;
+        --textColor:#202a4b;
+        --btnMain:#c2def7;
+        --btnScondary:#83b3d9;
+    
+    
+}
+
 body {
     margin: 0;
     padding: 0;
