@@ -1,4 +1,4 @@
-
+//to handle submit event listener of the modal
 const projectTitleInput = document.getElementById('title');
 const markerInput = document.getElementById('color');
 const form = document.getElementById('add-new-Project');
@@ -6,7 +6,7 @@ const modal = document.getElementById('modal');
 
 
 
-function getNewProjectInfo() {
+export default function getNewProjectInfo() {
     form.addEventListener('submit', function(e) {
         e.preventDefault();
 

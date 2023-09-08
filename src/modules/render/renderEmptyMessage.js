@@ -1,3 +1,5 @@
+//render empty message in the case of having no projects
+
 import {emptyMessage} from '../../assets/strings.js';
 
 export function renderEmptymessage(){
