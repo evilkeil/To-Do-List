@@ -3,7 +3,7 @@
 }
 
 :root{
-        --mainColor:#ffffff;
+        --mainColor:#3c7794;
         --secondaryColor:#fce3f0;
         --textColor:#202a4b;
         --btnMain:#c2def7;
@@ -20,6 +20,7 @@ body {
     justify-content: center;
     align-items: center; 
     height: 100vh; 
+    background-color: var(--mainColor);
 }
 
 /* styles for the add project button  */
@@ -78,7 +79,7 @@ body {
 /* styles for the main container  */
 
 #main-container{
-    /* border: 5px solid red; */
+    background-color: var(--secondaryColor);
     width: 80%;
     height: 100%;
     overflow: auto;
