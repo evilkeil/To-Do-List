@@ -67,13 +67,29 @@ body {
 /* styles for the main container  */
 
 #main-container{
-    border: 5px solid red;
+    /* border: 5px solid red; */
     width: 80%;
     height: 100%;
+    overflow: auto;
 }
 
 #main-container.center-grid {
     display: grid;
    place-content: center;
    
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-auto-rows: 100px;
+    gap: 5px;
+
+}
+
+.card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    height: 100%
 }
