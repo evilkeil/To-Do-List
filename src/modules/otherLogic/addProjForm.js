@@ -1,8 +1,11 @@
 //to handle submit event listener of the modal
+
+import createProject from './projectObj'
 const projectTitleInput = document.getElementById('title');
 const markerInput = document.getElementById('color');
 const form = document.getElementById('add-new-Project');
 const modal = document.getElementById('modal');
+
 
 
 
@@ -18,11 +21,7 @@ export default function getNewProjectInfo() {
         modal.close();
 
        
-        const projectInfo = {
-            title,
-            marker,
-            date
-        };
+        const projectInfo = createProject(title,marker,date);
 
 
         return projectInfo;
