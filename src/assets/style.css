@@ -118,6 +118,14 @@ body {
     margin: 0;
   }
 
+  .card-marker{
+    height: 100%;
+    width: 5%;
+    background-color: rebeccapurple;
+    position: absolute;
+    left: 0;
+  }
+
 /* modal related stlyes */
 .close{
     display: flex;
