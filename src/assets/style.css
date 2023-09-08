@@ -108,6 +108,11 @@ body {
     justify-content: center;
     position: relative;
 }
+.card:hover{
+    cursor: pointer;
+    background-color: var(--btnScondary);
+}
+
 .time {
     position: absolute;
     bottom: 0px;
@@ -124,6 +129,7 @@ body {
     background-color: rebeccapurple;
     position: absolute;
     left: 0;
+    top: 0;
   }
 
 /* modal related stlyes */
