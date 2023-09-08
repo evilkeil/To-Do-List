@@ -105,3 +105,18 @@ body {
     margin: 10px;
     height: 100%
 }
+
+/* modal related stlyes */
+.close{
+    display: flex;
+    justify-content: flex-end
+}
+.close svg{
+    width: 15px;
+    height: 15px;
+}
+
+.close svg:hover{
+    cursor: pointer;
+    fill: red;
+}
