@@ -6,6 +6,7 @@ import checkStorage from "./modules/storage/countItems.js";
 import createProject from './modules/otherLogic/projectObj';
 import OnPageLoad from './modules/render/pageOnload';
 import getItemsFromStorage from './modules/storage/getItemsFromStorage';
+import ShowProjectAddModal from './modules/render/showAddProjModal';
 
 
 
@@ -23,6 +24,9 @@ let k = projects.projectList;
 getItemsFromStorage(k,"project")
 console.log(k);
 OnPageLoad(k,"project");
+
+ShowProjectAddModal(k,"project")
+
 
 
  

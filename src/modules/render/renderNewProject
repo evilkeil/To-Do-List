@@ -1,0 +1,29 @@
+//render the latest created project
+
+export default function renderNewProject(name,mark,date){
+    const mainContainer = document.getElementById('main-container');
+        const card = document.createElement('div');
+        card.classList.add('card');
+
+        //marker
+        const marker = document.createElement('div');
+        marker.classList.add('card-marker');
+        marker.style.cssText = `background-color: ${mark};`
+        card.appendChild(marker);
+
+        //title
+        const title = document.createElement('h2');
+        title.textContent=`${name}`;
+        card.appendChild(title);
+
+        //time
+        const time = document.createElement('p');
+        time.classList.add('time');
+        time.textContent = `${date}`;
+        card.appendChild(time);
+
+
+        mainContainer.appendChild(card)
+   
+    
+}
