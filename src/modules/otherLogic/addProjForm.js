@@ -33,6 +33,7 @@ export default function getNewProjectInfo(arr,keyPrefix) {
     e.preventDefault();
     createAndStoreProject();
     modal.close();
+    form.reset();
 
   });
 }
