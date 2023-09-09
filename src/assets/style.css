@@ -85,18 +85,24 @@ body {
     overflow: auto;
 }
 
-#main-container.center-grid {
-    display: grid;
-   place-content: center;
-   
-}
-
 .projects {
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-auto-rows: 100px;
     gap: 5px;
 
+}
+
+
+#main-container.center-grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+#main-container.center-grid h1 {
+    text-align: center;
+   
 }
 
 .card {

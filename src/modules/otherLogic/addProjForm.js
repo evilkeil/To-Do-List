@@ -4,12 +4,14 @@ import countItemsWithKeyName from '../storage/countItems';
 import setStorageItem from '../storage/setStorage.js';
 import getItemsFromStorage from '../storage/getItemsFromStorage';
 import renderNewProject from '../render/renderNewProject';
+import removeEmptyMessage from '../render/removeEmptymsg';
 
 
 const projectTitleInput = document.getElementById('title');
 const markerInput = document.getElementById('color');
 const form = document.getElementById('add-new-Project');
 const modal = document.getElementById('modal');
+const submitButton = document.getElementById('submitProj')
 
 function createAndStoreProject() {
   const title = projectTitleInput.value;
@@ -32,6 +34,7 @@ export default function getNewProjectInfo(arr,keyPrefix) {
   form.addEventListener('submit', function (e) {
     e.preventDefault();
     createAndStoreProject();
+    removeEmptyMessage();
     modal.close();
     form.reset();
 

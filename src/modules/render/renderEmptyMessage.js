@@ -7,6 +7,7 @@ export default function renderEmptymessage(){
 
     const h1 = document.createElement('h1');
     h1.textContent = emptyMessage;
+    h1.classList.add('empty');
     mainContainer.classList.add('center-grid');
     mainContainer.appendChild(h1);
 }

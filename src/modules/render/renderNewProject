@@ -1,5 +1,6 @@
 //render the latest created project
 
+
 export default function renderNewProject(name,mark,date){
     const mainContainer = document.getElementById('main-container');
         const card = document.createElement('div');
@@ -21,7 +22,6 @@ export default function renderNewProject(name,mark,date){
         time.classList.add('time');
         time.textContent = `${date}`;
         card.appendChild(time);
-
 
         mainContainer.appendChild(card)
    
