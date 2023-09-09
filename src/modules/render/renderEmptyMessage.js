@@ -2,7 +2,7 @@
 
 import {emptyMessage} from '../../assets/strings.js';
 
-export function renderEmptymessage(){
+export default function renderEmptymessage(){
     const mainContainer = document.getElementById('main-container');
 
     const h1 = document.createElement('h1');

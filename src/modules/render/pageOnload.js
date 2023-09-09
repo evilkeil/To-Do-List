@@ -6,9 +6,9 @@ import renderProjects from "./renderProjects.js";
 
 
 
-export default function OnPageLoad(projectList){
+export default function OnPageLoad(projectList,key){
     document.addEventListener('DOMContentLoaded',function(){
-       const items = countItemsWithKeyName(project)
+       const items = countItemsWithKeyName(key)
         if(items === 0){
             renderEmptymessage();
         }else{
