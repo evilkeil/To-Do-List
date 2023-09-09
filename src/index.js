@@ -7,30 +7,16 @@ import createProject from './modules/otherLogic/projectObj';
 
 
 
-const proj2 = createProject("dance","#3c7794","2023-09-08");
+const projects = function(){
+    let projectList =[];
 
-setStorageItem(`project2`, proj2);
-
-
-
-let projectList =[]
-
-  function getProjectsFromStorage(){
-    for (let i = 0; i < localStorage.length; i++) {
-        let key = localStorage.key(i);
-        let value = localStorage.getItem(key);
-      
-        // Check if the key starts with "project"
-        if (key.startsWith("project")) {
-            let p1=GetStorageItems(key);
-            
-          projectList.push(p1);
-        }
-      }
-};
-getProjectsFromStorage();
-console.log(projectList)
+    return{
+        projectList
+    }
+}();
 
 
+
+ 
 
 
