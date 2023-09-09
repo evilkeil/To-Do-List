@@ -18,7 +18,8 @@ export default function renderProjects(arr){
         //time
         const time = document.createElement('p');
         time.classList.add('time');
-        time.textContent = `${element.time}`;
+        time.textContent = `${element.date}`;
+        card.appendChild(time);
 
 
         mainContainer.appendChild(card)
