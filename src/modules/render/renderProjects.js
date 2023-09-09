@@ -1,3 +1,5 @@
+import createSvgComponent from "./deleteProjectSVG";
+
 export default function renderProjects(arr){
     const mainContainer = document.getElementById('main-container');
     arr.forEach(element => {
@@ -10,6 +12,8 @@ export default function renderProjects(arr){
         marker.style.cssText = `background-color: ${element.marker};`
         card.appendChild(marker);
 
+        //svg
+        card.appendChild(createSvgComponent());
         //title
         const title = document.createElement('h2');
         title.textContent=`${element.title}`;

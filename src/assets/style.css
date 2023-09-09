@@ -118,6 +118,22 @@ body {
     cursor: pointer;
     background-color: var(--btnScondary);
 }
+.delete-project{
+    width: 20px;
+    height: 20px;
+
+}
+.delete-project svg{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.delete-project svg:hover{
+    fill:red;
+    cursor: pointer;
+}
 
 .time {
     position: absolute;
