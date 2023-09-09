@@ -10,7 +10,7 @@ const modal = document.getElementById('modal');
 export default function ShowProjectAddModal(arr,keyPrefix){
     openbtn.addEventListener('click',function(e){
         modal.showModal();
-        resetNewProjectForm()
+        resetNewProjectForm();
         getNewProjectInfo(arr,keyPrefix);
     })
     closeModal()

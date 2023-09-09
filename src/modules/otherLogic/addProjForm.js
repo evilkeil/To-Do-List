@@ -13,19 +13,21 @@ const form = document.getElementById('add-new-Project');
 const modal = document.getElementById('modal');
 const submitButton = document.getElementById('submitProj')
 
-function createAndStoreProject() {
+function createAndStoreProject(arr) {
   const title = projectTitleInput.value;
   const marker = markerInput.value;
   const currentDate = new Date();
   const date = currentDate.toISOString().split('T')[0];
 
 
-  const projectInfo = createProject(title, marker, date);
+
   const storageLength = countItemsWithKeyName("project");
   const projectNumber = storageLength + 1;
-
+  const UID = projectNumber;
+  const projectInfo = createProject(title, marker, date,UID);
   setStorageItem(`project${projectNumber}`, projectInfo);
-  renderNewProject(title,marker,date);
+  renderNewProject(title,marker,date,UID);
+  arr.push(projectInfo);
 
   return projectInfo;
 }
@@ -33,7 +35,7 @@ function createAndStoreProject() {
 export default function getNewProjectInfo(arr,keyPrefix) {
   form.addEventListener('submit', function (e) {
     e.preventDefault();
-    createAndStoreProject();
+    createAndStoreProject(arr);
     removeEmptyMessage();
     modal.close();
     form.reset();

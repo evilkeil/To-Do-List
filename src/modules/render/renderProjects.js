@@ -5,6 +5,7 @@ export default function renderProjects(arr){
     arr.forEach(element => {
         const card = document.createElement('div');
         card.classList.add('card');
+        card.setAttribute('data-UID', `${element.UID}`);
 
         //marker
         const marker = document.createElement('div');
@@ -17,6 +18,7 @@ export default function renderProjects(arr){
         //title
         const title = document.createElement('h2');
         title.textContent=`${element.title}`;
+        title.classList.add('project-title');
         card.appendChild(title);
 
         //time
