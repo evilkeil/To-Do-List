@@ -121,14 +121,14 @@ body {
 .delete-project{
     width: 20px;
     height: 20px;
-
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 .delete-project svg{
     width: 20px;
     height: 20px;
-    position: absolute;
-    top: 0;
-    right: 0;
+    
 }
 .delete-project svg:hover{
     fill:red;

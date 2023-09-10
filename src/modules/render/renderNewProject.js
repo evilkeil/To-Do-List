@@ -1,4 +1,5 @@
 //render the latest created project
+ import createSvgComponent from "./deleteProjectSVG";
 
 
 export default function renderNewProject(name,mark,date,UID){
@@ -17,6 +18,9 @@ export default function renderNewProject(name,mark,date,UID){
         title.textContent=`${name}`;
         title.classList.add('project-title');
         card.appendChild(title);
+        
+         //svg
+         card.appendChild(createSvgComponent());
 
         //time
         const time = document.createElement('p');

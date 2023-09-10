@@ -3,7 +3,7 @@ import createProject from './projectObj';
 import countItemsWithKeyName from '../storage/countItems';
 import setStorageItem from '../storage/setStorage.js';
 import getItemsFromStorage from '../storage/getItemsFromStorage';
-import renderNewProject from '../render/renderNewProject';
+import renderNewProject from '../render/renderNewProject.js';
 import removeEmptyMessage from '../render/removeEmptymsg';
 
 
@@ -16,6 +16,12 @@ const submitButton = document.getElementById('submitProj')
 function createAndStoreProject(arr) {
   const title = projectTitleInput.value;
   const marker = markerInput.value;
+
+  if (!title || !marker) {
+    // You can display an error message or simply return without creating/storing the project
+    return;
+  }
+  
   const currentDate = new Date();
   const date = currentDate.toISOString().split('T')[0];
 
@@ -25,15 +31,15 @@ function createAndStoreProject(arr) {
   const projectNumber = storageLength + 1;
   const UID = projectNumber;
   const projectInfo = createProject(title, marker, date,UID);
-  setStorageItem(`project${projectNumber}`, projectInfo);
+  setStorageItem(`project${UID}`, projectInfo);
   renderNewProject(title,marker,date,UID);
   arr.push(projectInfo);
 
   return projectInfo;
 }
 
-export default function getNewProjectInfo(arr,keyPrefix) {
-  form.addEventListener('submit', function (e) {
+export default function getNewProjectInfo(arr) {
+  submitButton.addEventListener('click', function (e) {
     e.preventDefault();
     createAndStoreProject(arr);
     removeEmptyMessage();
