@@ -1,6 +1,6 @@
 export default function createSvgComponent(){
-    const div = document.createElement('div');
-    div.classList.add('delete-project');
+    // const div = document.createElement('div');
+    // div.classList.add('delete-project');
 
     // SVG Element
     const svgElement = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
@@ -19,7 +19,8 @@ export default function createSvgComponent(){
     svgElement.appendChild(pathElement);
 
     //append SVG to div
-    div.appendChild(svgElement);
+    // div.appendChild(svgElement);
 
-    return div;
+    // return div;
+    return svgElement;
 }

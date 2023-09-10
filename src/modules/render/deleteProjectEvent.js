@@ -2,22 +2,16 @@
 import deleteProjectConfirm from "../otherLogic/deleteProjectForm";
 
 
-export default function deleteProject(arr) {
-    // Get all the SVG elements with class 'delete-project' (assuming there are multiple)
-const deleteBtns = document.querySelectorAll('.delete-project-btn');
+const container = document.getElementById('main-container');
 
-// Attach click event listeners to each SVG element
-deleteBtns.forEach(deleteBtn => {
-    deleteBtn.addEventListener('click', function (e) {
-
-        const modal = document.querySelector('.delete-modal');
-        modal.showModal();
-        // deleteProjectConfirm(arr,e);
-    });
-});
+export default function deleteProject(){
+    container.addEventListener('click',function(e){
+        
+      const div= e.target.closest('.card');
+        console.log(div)
+       
+    })
 }
-
-
 
 
 

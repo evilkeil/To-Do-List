@@ -7,7 +7,7 @@ import createProject from './modules/otherLogic/projectObj';
 import OnPageLoad from './modules/render/pageOnload';
 import getItemsFromStorage from './modules/storage/getItemsFromStorage';
 import ShowProjectAddModal from './modules/render/showAddProjModal';
-import deleteProject from './modules/render/deleteProject';
+import deleteProject from './modules/render/deleteProjectEvent';
 
 
 
@@ -27,7 +27,7 @@ getItemsFromStorage(k,"project")
 OnPageLoad(k,"project");
 
 ShowProjectAddModal(k,"project")
-// deleteProject(k);
+deleteProject(k);
 
 console.log(k);
  
