@@ -3,10 +3,11 @@ import deleteProjectConfirm from "../otherLogic/deleteProjectForm";
 
 
 const container = document.getElementById('main-container');
+const modal = document.querySelector('.delete-modal');
 
 export default function deleteProject(){
     container.addEventListener('click',function(e){
-        
+        modal.showModal();
       const div= e.target.closest('.card');
         console.log(div)
        
