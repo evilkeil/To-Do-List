@@ -1,1 +1,1 @@
-export const CardList = document.querySelector('.cardList')
+export const CardList = document.getElementById('cardUL');

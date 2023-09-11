@@ -8,28 +8,34 @@ import OnPageLoad from './modules/render/pageOnload';
 import getItemsFromStorage from './modules/storage/getItemsFromStorage';
 import ShowProjectAddModal from './modules/render/showAddProjModal';
 import deleteProject from './modules/render/deleteProjectEvent';
+import countItemsWithKeyName from './modules/storage/countItems.js';
+
+//newer
+
+import onPageLoad from './modules/test/rendertest/pageload';
+import renderProjectList from './modules/test/rendertest/renderProjectList';
+
+
+     let projectList =[];
+ 
+    onPageLoad(projectList);
+
+    console.log(projectList);
+
+    renderProjectList(projectList);
 
 
 
 
-const projects = function(){
-    let projectList =[];
 
-    return{
-        projectList
-    }
-}();
 
-let k = projects.projectList;
 
-getItemsFromStorage(k,"project")
+// OnPageLoad(projectList,"project");
 
-OnPageLoad(k,"project");
+// ShowProjectAddModal(projectList,"project")
+// deleteProject(projectList);
 
-ShowProjectAddModal(k,"project")
-deleteProject(k);
-
-console.log(k);
+// console.log(projectList);
  
 
 

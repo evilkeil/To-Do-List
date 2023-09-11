@@ -85,12 +85,20 @@ body {
     overflow: auto;
 }
 
-.projects {
+/* .projects {
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-auto-rows: 100px;
     gap: 5px;
 
+} */
+
+.cardList{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-auto-rows: 100px;
+    gap: 5px;
+    padding: 0;
 }
 
 
