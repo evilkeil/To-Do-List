@@ -14,15 +14,14 @@ import countItemsWithKeyName from './modules/storage/countItems.js';
 
 import onPageLoad from './modules/test/rendertest/pageload';
 import renderProjectList from './modules/test/rendertest/renderProjectList';
+import addProjectBtn from './modules/test/rendertest/addProjectBtnEventListener';
 
 
      let projectList =[];
  
     onPageLoad(projectList);
 
-    console.log(projectList);
-
-    renderProjectList(projectList);
+    addProjectBtn(projectList)
 
 
 

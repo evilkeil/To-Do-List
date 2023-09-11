@@ -5,7 +5,7 @@ const list= document.querySelector('.cardList');
 
 
 export default function renderProjectList(arr){
-    console.log(CardList)
+    
     arr.forEach(element => {
         const UID = element.UID;
         const date = element.date;
