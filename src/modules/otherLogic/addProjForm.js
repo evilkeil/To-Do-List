@@ -4,7 +4,7 @@ import countItemsWithKeyName from '../storage/countItems';
 import setStorageItem from '../storage/setStorage.js';
 import getItemsFromStorage from '../storage/getItemsFromStorage';
 import renderNewProject from '../render/renderNewProject.js';
-import removeEmptyMessage from '../render/removeEmptymsg';
+import removeEmptyMessage from '../test/rendertest/removeEmptymsg';
 
 
 const projectTitleInput = document.getElementById('title');

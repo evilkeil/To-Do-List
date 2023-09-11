@@ -4,7 +4,7 @@ import setStorageItem from "./modules/storage/setStorage.js";
 import DeleteStorageItem from "./modules/storage/deleteStorageItems.js";
 import checkStorage from "./modules/storage/countItems.js";
 import createProject from './modules/otherLogic/projectObj';
-import OnPageLoad from './modules/render/pageOnload';
+
 import getItemsFromStorage from './modules/storage/getItemsFromStorage';
 import ShowProjectAddModal from './modules/render/showAddProjModal';
 import deleteProject from './modules/render/deleteProjectEvent';

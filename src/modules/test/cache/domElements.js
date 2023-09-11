@@ -1,4 +1,6 @@
 
+
+export const mainContainer = document.getElementById('main-container');// the main container
 export const CardList = document.getElementById('cardUL'); //the ul containing the cards
 export const openbtn = document.getElementById('add-Project'); //the button to open the add project modal
 export const modalAddProject = document.getElementById('modal'); //the add project modal
