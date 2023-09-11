@@ -1,6 +1,6 @@
 import { CardList } from "../cache/domElements";
 import cardComponent from "../components/cardComponent";
-const list= document.querySelector('.cardList');
+
 
 
 
