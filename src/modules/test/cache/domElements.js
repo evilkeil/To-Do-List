@@ -14,3 +14,10 @@ export const projectTitleInput = document.getElementById('title');
 export const markerInput = document.getElementById('color');
 export const submitButton = document.getElementById('submitProj');
 export const closeSVG =document.querySelector('.close svg');//the close btn in the add project modal
+
+
+//delete projects related elements
+
+export const deleteModal = document.querySelector('.delete-modal');
+export const yes = document.getElementById('yes');
+export const no = document.getElementById('no');

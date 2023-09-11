@@ -14,7 +14,7 @@ import deleteProjectBtn from './modules/test/rendertest/deleteProjectEventLister
 
     addProjectBtn(projectList)
 
-    // deleteProjectBtn(projectList)
+    deleteProjectBtn(projectList)
 
 
 
