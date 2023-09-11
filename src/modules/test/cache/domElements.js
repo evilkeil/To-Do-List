@@ -1,0 +1,1 @@
+export const CardList = document.querySelector('.cardList')
