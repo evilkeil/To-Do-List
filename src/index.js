@@ -8,15 +8,16 @@ import onPageLoad from './modules/render/pageload.js';
 import addProjectBtn from './modules/render/addProjectBtnEventListener.js'
 // import deleteProjectBtn from './modules/test/rendertest/deleteProjectEventListerner';
 import deleteProjectBtn from './modules/render/deleteProjectEventListerner';
-
+import countItemsWithKeyName from './modules/storage/countItems';
 
      let projectList =[];
+     let u;
  
-    onPageLoad(projectList);
+    onPageLoad(projectList,u);
 
-    addProjectBtn(projectList)
+    // addProjectBtn(projectList,u)
 
-    deleteProjectBtn(projectList)
+    // deleteProjectBtn(projectList,u)
 
 
 

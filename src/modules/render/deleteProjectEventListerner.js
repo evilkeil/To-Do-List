@@ -1,7 +1,7 @@
 import { CardList ,deleteModal} from "../cache/domElements";
 import deleteModalInputs from "../deleteBtnLogic/deleteModalInputs";
 
-export default function deleteProjectBtn(arr){
+export default function deleteProjectBtn(arr,n){
     CardList.addEventListener('click',(e)=>{
         const target = e.target;
         const svgPath = document.querySelector('delete-project-btn path')
@@ -10,7 +10,7 @@ export default function deleteProjectBtn(arr){
             const index = Array.from(CardList.children).indexOf(closestLi);
             const uid = closestLi.getAttribute('data-uid')
             deleteModal.showModal();
-            deleteModalInputs(arr,index,uid);
+            deleteModalInputs(arr,index,uid,n);
             
        }
     })
