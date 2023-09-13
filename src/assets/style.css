@@ -189,6 +189,7 @@ body {
     place-content: center;
     grid-template-columns: 80%;
 }
+
 #task-container {
     display: flex;
     flex-direction: column;
@@ -203,15 +204,16 @@ body {
     
 }
 #task-container h1{
-    margin-left: 15%;
-    margin-top: 50px;
+    
+    text-align: center;
+    width: 100%;
 }
 
 .task-list{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: flex-start;
     font-size: 1.5rem;
     width: 100%;
     list-style: none;
@@ -224,7 +226,8 @@ body {
 .task-list li{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    width: 100%;
 }
 .return{
  position: absolute;
