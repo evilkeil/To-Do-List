@@ -3,16 +3,19 @@ import removeProjectsAndAppendTasks from "../components/taskListRelatedComponent
 import retriveTasks from "../components/taskListRelatedComponents/retriveTasks";
 import renderTasks from "./renderTaskList";
 import taskTitleComponent from "../components/taskListRelatedComponents/taskTitleComponent";
+import deleteBtnSVG from "../components/deleteBtnComponent";
+import addTaskBtn from "../components/taskListRelatedComponents/addTaskBtnComponent";
 
 export default function openTaskList(target,uid,title){
     const isDeleteBtn = target.querySelector('.delete-project-btn');
     
     if (target.classList.contains('card') && !(target === isDeleteBtn)){
         removeProjectsAndAppendTasks()
-        taskTitleComponent(title);
-        // const taskList = retriveTasks(title,uid);
-        // // console.log( tasks)
-        // renderTasks(taskList);
+        const taskContainer = taskTitleComponent(title);
+        const taskList = retriveTasks(title,uid);
+        renderTasks(taskList,taskContainer);
+        taskContainer.appendChild(deleteBtnSVG("return"));
+        taskContainer.appendChild(addTaskBtn());
           }
     }
     

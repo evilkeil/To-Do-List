@@ -3,8 +3,13 @@ import GetStorageItems from "../../storage/getStorage";
 
 export default function retriveTasks(title,uid){
     const items = countItemsWithKeyName(title);
+    let project;
    if(items !== 0){
-   const project =  GetStorageItems(title);
-        return project;
+     project =  GetStorageItems(title);
+        
+   }else {
+      project = []
    }
+   
+   return project;
 }

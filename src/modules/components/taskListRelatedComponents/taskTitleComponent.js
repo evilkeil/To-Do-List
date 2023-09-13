@@ -6,4 +6,5 @@ export default function taskTitleComponent(title){
     
     const taskContainer = document.getElementById("task-container");
     taskContainer.appendChild(h1);
+    return taskContainer;
 }
