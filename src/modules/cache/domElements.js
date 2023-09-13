@@ -21,3 +21,8 @@ export const closeSVG =document.querySelector('.close svg');//the close btn in t
 export const deleteModal = document.querySelector('.delete-modal');
 export const yes = document.getElementById('yes');
 export const no = document.getElementById('no');
+
+
+//task list related elements
+
+export const taskContainer= document.getElementById('task-container');
