@@ -92,7 +92,10 @@ body {
     gap: 5px;
 
 } */
-
+.task-closed{
+    display: grid;
+    place-items: center;
+}
 .cardList{
     display: grid;
     grid-template-columns: repeat(2,1fr);

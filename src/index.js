@@ -12,7 +12,8 @@ import countItemsWithKeyName from './modules/storage/countItems';
 
      let projectList =[];
      let u;
- 
+
+     // localStorage.setItem("studies", JSON.stringify("programming"));
     onPageLoad(projectList,u);
 
     // addProjectBtn(projectList,u)
