@@ -179,3 +179,74 @@ body {
     cursor: pointer;
     fill: red;
 }
+
+/* task list styles */
+.task-open{
+    display: grid;
+    place-content: center;
+    grid-template-columns: 80%;
+}
+#task-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 75%;
+    position: relative;
+    margin-top: 50px;
+    margin-left: 15%;
+   
+    border: 1px solid black;
+    
+}
+#task-container h1{
+    margin-left: 15%;
+    margin-top: 50px;
+}
+
+.task-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.5rem;
+    width: 100%;
+    list-style: none;
+
+}
+.task-list .taskdone::before{
+    
+    content: '✓';
+}
+.task-list li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.return{
+ position: absolute;
+ top: 25px;
+ right: 50px;
+ width: 3rem;
+ height: 3rem;
+ margin-top: 50px;
+}
+.return:hover{
+    cursor: pointer;
+    fill:red;
+}
+
+.add-task-btn{
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    top:25px;
+    right: 100px;
+    border-radius: 30px;
+    margin-top: 50px;
+}
+
+.add-task-btn:hover{
+    cursor: pointer;
+    background-color: var(--mainColor);
+}

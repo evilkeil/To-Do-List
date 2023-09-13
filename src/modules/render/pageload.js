@@ -6,7 +6,8 @@ import emptyMessage from "./renderMessage";
 import setStorageItem from "../storage/setStorage";
 import GetStorageItems from "../storage/getStorage";
 import addProjectBtn from "./addProjectBtnEventListener";
-import deleteProjectBtn from "./deleteProjectEventListerner";
+import cardEventListener from "./cardEventListener";
+
 export default function onPageLoad(arr,n){
     document.addEventListener('DOMContentLoaded',function(){
         const items = countItemsWithKeyName("project");
@@ -21,12 +22,12 @@ export default function onPageLoad(arr,n){
          if(items === 0){
             emptyMessage();
             addProjectBtn(arr,n);
-            deleteProjectBtn(arr,n)
+            cardEventListener(arr,n);
             
          }else{ 
             getItemsFromStorage(arr,"project")
             addProjectBtn(arr,n);
-            deleteProjectBtn(arr,n)
+            cardEventListener(arr,n);
          }
          renderProjectList(arr);
          
