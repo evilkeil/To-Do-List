@@ -1,15 +1,14 @@
 import { CardList, mainContainer } from "../cache/domElements";
-import taskDivComponent from "../components/taskListRelatedComponents/taskDivComponent";
+import retriveTasks from "../components/taskListRelatedComponents/retriveTasks";
+
 
 export default function openTaskList(target,uid,title){
-    if (target.classList.contains('card')){
-        console.log(title);
-        const isDeleteBtn = target.querySelector('.delete-project-btn');
-        if (!isDeleteBtn) {
-        //    mainContainer.removeChild(CardList);
-        // taskDivComponent(title);
-        console.log(title);
+    const isDeleteBtn = target.querySelector('.delete-project-btn');
+    
+    if (target.classList.contains('card') && !(target === isDeleteBtn)){
+        
+        const tasks = retriveTasks(title,uid);
+        console.log( tasks)
           }
     }
     
-}
