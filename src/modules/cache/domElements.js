@@ -25,4 +25,4 @@ export const no = document.getElementById('no');
 
 //task list related elements
 
-export const taskContainer= document.getElementById('task-container');
+export const taskContainer= document.querySelector('.task-container')

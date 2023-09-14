@@ -184,11 +184,11 @@ body {
 }
 
 /* task list styles */
-.task-open{
+/* .task-open{
     display: grid;
     place-content: center;
     grid-template-columns: 80%;
-}
+} */
 
 #task-container {
     display: flex;
