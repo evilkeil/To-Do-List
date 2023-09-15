@@ -23,7 +23,7 @@ export default function openTaskList(target,uid,title){
         taskContainer.addEventListener('click',(e)=>{
             const target = e.target;
             returnToProjectList(target);
-            renderTaskCompleted(target);
+            renderTaskCompleted(target,taskList,title);
         })
           }
     }

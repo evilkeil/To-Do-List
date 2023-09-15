@@ -13,7 +13,7 @@ import countItemsWithKeyName from './modules/storage/countItems';
      let projectList =[];
      let u;
 
-     // let tasks = ["programming","backend","frontend","mockquestions"];
+     // let tasks = [{task:"programming",status:"task"},{task:"Front-End",status:"task"},{task:"Back-end",status:"task"},{task:"Reading",status:"task"}];
 
      // localStorage.setItem("studies", JSON.stringify(tasks));
     onPageLoad(projectList,u);

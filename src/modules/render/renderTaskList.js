@@ -7,11 +7,12 @@ export default function renderTasks(arr,container){
         return
     }
     arr.forEach(element => {
-        
+        const status = element.status;
         const li = document.createElement('li');
-        li.classList.add('task');
+        li.classList.add("task");
+        li.classList.add(status);
         const p = document.createElement('p');
-        p.textContent=element;
+        p.textContent=element.task;
         li.appendChild(p);
         ul.appendChild(li)
         
