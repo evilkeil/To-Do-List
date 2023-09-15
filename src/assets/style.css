@@ -216,18 +216,22 @@ body {
     align-items: flex-start;
     font-size: 1.5rem;
     width: 100%;
-    list-style: none;
+    
 
 }
-.task-list .taskdone::before{
+.task-list .done{
     
-    content: '✓';
+  text-decoration: line-through;
 }
 .task-list li{
     display: flex;
     align-items: center;
     justify-content: flex-start;
     width: 100%;
+}
+.task-list li:hover{
+    cursor: pointer;
+    color: var(--mainColor);
 }
 .return{
  position: absolute;
