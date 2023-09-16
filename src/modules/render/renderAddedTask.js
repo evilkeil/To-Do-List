@@ -1,4 +1,7 @@
-export default function renderAddedTask(obj){
+import { taskContainer } from "../cache/domElements";
+
+export default function renderAddedTask(obj,ul){
+    
     const li = document.createElement('li');
     li.classList.add("task");
     li.classList.add(obj.status);
@@ -6,6 +9,5 @@ export default function renderAddedTask(obj){
     p.textContent=obj.task;
     li.appendChild(p);
 
-    const ul = document.querySelector('.task-list');
-    ul.appendChild(li);
+    console.log(taskContainer)
 }

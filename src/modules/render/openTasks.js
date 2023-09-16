@@ -15,8 +15,8 @@ export default function openTaskList(target,uid,title){
     if (target.classList.contains('card') && !(target === isDeleteBtn)){
         removeProjectsAndAppendTasks()
         const taskContainer = taskTitleComponent(title);
-        const taskList = retriveTasks(title,uid);
-        renderTasks(taskList,taskContainer);
+        const taskList = retriveTasks(title);
+        renderTasks(taskList);
         taskContainer.appendChild(deleteBtnSVG("return"));
         taskContainer.appendChild(addTaskBtn());
 
@@ -26,6 +26,7 @@ export default function openTaskList(target,uid,title){
             returnToProjectList(target);
             renderTaskCompleted(target,taskList,title);
             openTaskModal(target,taskList,title);
+            
         })
           }
     }

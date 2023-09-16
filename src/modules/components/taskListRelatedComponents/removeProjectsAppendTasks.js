@@ -1,10 +1,9 @@
 import { CardList, mainContainer } from "../../cache/domElements";
 
 export default function removeProjectsAndAppendTasks(){
-    const container = document.createElement('div');
-    container.setAttribute('id', "task-container");
-    container.classList.add('task-container');
+    const container = document.getElementById("task-container");
+    container.style.display = 'flex';
 
-    mainContainer.removeChild(CardList);
-    mainContainer.appendChild(container);
+    CardList.style.display = 'none';
+    
 }

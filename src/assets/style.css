@@ -201,6 +201,7 @@ body {
     margin-left: 15%;
    
     border: 1px solid black;
+    display: none;
     
 }
 #task-container h1{

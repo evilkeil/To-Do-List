@@ -1,7 +1,7 @@
 import countItemsWithKeyName from "../../storage/countItems";
 import GetStorageItems from "../../storage/getStorage";
 
-export default function retriveTasks(title,uid){
+export default function retriveTasks(title){
     const items = countItemsWithKeyName(title);
     let project;
    if(items !== 0){
