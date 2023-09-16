@@ -14,6 +14,7 @@ export const projectTitleInput = document.getElementById('title');
 export const markerInput = document.getElementById('color');
 export const submitButton = document.getElementById('submitProj');
 export const closeSVG =document.querySelector('.close svg');//the close btn in the add project modal
+export const addProjectBtnContainer = document.querySelector('.add-project-container');
 
 
 //delete projects related elements

@@ -9,6 +9,7 @@ import returnToProjectList from "./returnToProjectList";
 import renderTaskCompleted from "./renderTaskCompleted";
 import openTaskModal from "./openTaskModal";
 
+
 export default function openTaskList(target,uid,title){
     const isDeleteBtn = target.querySelector('.delete-project-btn');
     
