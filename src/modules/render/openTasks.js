@@ -25,7 +25,7 @@ export default function openTaskList(target,uid,title){
             const target = e.target;
             returnToProjectList(target);
             renderTaskCompleted(target,taskList,title);
-            openTaskModal(target);
+            openTaskModal(target,taskList,title);
         })
           }
     }
