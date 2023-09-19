@@ -8,60 +8,7 @@
     <link rel="stylesheet" href="styles.css"> <!-- Include your CSS file -->
 </head>
 <body>
-    <div class="add-project-container" id="add-Project">
-        <button class="hover-btn">+</button>
-        <div class="description">Add Project</div>
-    </div>
-    <h1>TO DO LIST</h1>
-    <!-- <div id="main-container" class="projects task-open"> -->
-    <div id="main-container" class="projects">
-       <ul class="cardList" id="cardUL"></ul>
-       <div id="task-container" class="task-container">
-        <h1></h1>
-        <ul class="task-list"></ul>
-       </div>
-       
-    </div>
-    <dialog  class="modal" id="modal">
-        <div class="close"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 26 26">
-            <path d="M 21.734375 19.640625 L 19.636719 21.734375 C 19.253906 22.121094 18.628906 22.121094 18.242188 21.734375 L 13 16.496094 L 7.761719 21.734375 C 7.375 22.121094 6.746094 22.121094 6.363281 21.734375 L 4.265625 19.640625 C 3.878906 19.253906 3.878906 18.628906 4.265625 18.242188 L 9.503906 13 L 4.265625 7.761719 C 3.882813 7.371094 3.882813 6.742188 4.265625 6.363281 L 6.363281 4.265625 C 6.746094 3.878906 7.375 3.878906 7.761719 4.265625 L 13 9.507813 L 18.242188 4.265625 C 18.628906 3.878906 19.257813 3.878906 19.636719 4.265625 L 21.734375 6.359375 C 22.121094 6.746094 22.121094 7.375 21.738281 7.761719 L 16.496094 13 L 21.734375 18.242188 C 22.121094 18.628906 22.121094 19.253906 21.734375 19.640625 Z"></path>
-            </svg></div>
-        <h2>Add a New Project</h2>
-        <form id="add-new-Project">
-            <div>
-                <label for="title">Project Name:</label>
-                <input type="text" id="title" name="title" required>
-            </div>
-            <div class="marker-input">
-                <label for="color">Select a Marker:</label>
-                <input type="color" id="color" name="color" required> 
-            </div>
-            <div  class="modal-btn">
-                <button type="submit" class="User-Input-Btns" id="submitProj">Submit</button>
-                <button type="reset" class="User-Input-Btns">Reset</button>
-            </div>
-        </form>
-    </dialog>
-        <dialog  class="delete-modal">
-            <h2>Are you sure you want to delete this Project?</h2>
-            <form id="delete">
-                <button id="yes">Yes</button>
-                <button id="no">No</button>
-            </form>
-        </dialog>
-    <dialog class="add-task-modal" id="add-task-modal">
-        <form id="task-form">
-            <div>
-                <label for="add-task">Add a task</label>
-                <input type="text" id="add-task" name="add-task" required>
-            </div>
-            <div>
-                <button id="reset-task-btn" type="reset-task-form">reset</button>
-                <button id="submit-task-btn">submit</button>
-                <button id="close-task-btn" method="dialog" type="reset">X</button>
-            </div>
-        </form>
-    </dialog>
+    <header class="header">TO DO LIST</header>
  
 </body>
 </html>
