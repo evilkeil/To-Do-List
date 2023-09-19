@@ -12,3 +12,13 @@
     
 }
 
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--mainColor);
+    color: var(--textColor);
+    /* display: grid;
+    grid:
+     "header" "header" "header" "header" */
+
+}
