@@ -1,6 +1,6 @@
 import { addTaskInput } from "../../cache/domElements";
-import renderAddedTask from "../../render/renderAddedTask";
-import renderTasks from "../../render/renderTaskList";
+import renderAddedTask from "../../renderAddedTask";
+import renderTasks from "../../renderTaskList";
 
 export default function pushTaskToArray(arr,title){
     const input = addTaskInput.value;

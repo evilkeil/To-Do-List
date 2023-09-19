@@ -1,9 +1,9 @@
 import { projectTitleInput,markerInput, } from "../cache/domElements";
-import createProjectObj from "../otherLogic/projectObj";
+import createProjectObj from "../../../otherLogic/projectObj";
 // import renderProjectList from "../rendertest/renderProjectList";
 import renderProjectList from "../render/renderProjectList";
-import countItemsWithKeyName from "../storage/countItems";
-import setStorageItem from "../storage/setStorage";
+import countItemsWithKeyName from "../../../storage/countItems";
+import setStorageItem from "../../../storage/setStorage";
 
 export default function createNewProject(arr,n){
     const title = projectTitleInput.value; //to be stored

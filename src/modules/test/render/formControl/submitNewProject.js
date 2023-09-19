@@ -2,7 +2,7 @@ import { submitButton,addProjectForm,modalAddProject } from "../cache/domElement
 import createNewProject from "./formInputControl";
 // import removeEmptyMessage from "../rendertest/removeEmptymsg";
 import removeEmptyMessage from "../render/removeEmptymsg";
-import setStorageItem from "../storage/setStorage";
+import setStorageItem from "../../../storage/setStorage";
 
 
 export default function submitNewProject(arr,n){
