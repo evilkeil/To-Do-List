@@ -33,3 +33,4 @@ export const addTaskForm = document.getElementById('task-form'); // the add task
 export const addTaskFormResetBtn = document.getElementById('reset-task-btn'); // button to reset the inputs of the add task form
 export const closeTaskBtn = document.getElementById('close-task-btn'); // button to close the add task modal
 export const addTaskInput = document.getElementById('add-task'); //the add task input
+export const taskList = document.querySelector('.task-list');

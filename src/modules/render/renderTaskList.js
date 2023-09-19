@@ -1,9 +1,13 @@
 
 export default function renderTasks(arr) {
     const ul = document.querySelector('.task-list');
-
-    if (arr.length === 0) {
+    // console.log((Array.isArray(arr)));
+    console.log(arr)
+    if (arr === null) {
         return;
+    }
+    if(arr.length === 0){
+        return
     }
 
     arr.forEach((element, index) => {
