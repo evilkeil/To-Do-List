@@ -1,7 +1,7 @@
 import { yes,no,deleteModal } from "../cache/domElements";
 import deleteFromArray from "./deleteFromArray";
-import deleteStorageItem from "../storage/deleteStorageItems";
-import setStorageItem from "../storage/setStorage";
+import deleteStorageItem from "../../../storage/deleteStorageItems";
+import setStorageItem from "../../../storage/setStorage";
 export default function deleteModalInputs(arr,index,uid,n){
     yes.addEventListener('click',(e)=>{
         deleteFromArray(arr,index);

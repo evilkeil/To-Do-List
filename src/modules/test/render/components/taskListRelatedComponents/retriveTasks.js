@@ -1,5 +1,5 @@
-import countItemsWithKeyName from "../../storage/countItems";
-import GetStorageItems from "../../storage/getStorage";
+import countItemsWithKeyName from "../../../../storage/countItems";
+import GetStorageItems from "../../../../storage/getStorage";
 
 
 // export default function retriveTasks(title) {
