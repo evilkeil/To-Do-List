@@ -18,7 +18,9 @@
         --hamburger-gap:6px;
         --hamburger-margin:10px;
     
-    
+    /* time variables */
+
+    --animation-timing:200ms ease-in-out;
 }
 
 body{
@@ -51,6 +53,7 @@ body{
     height: var(--bar-height);
     background: var(--sidebar-foreground);
     border-radius: 9999px;
+    transition: opacity var(--animation-timing) , width var(--animation-timing);
 }
 
 .hamburger-menu input{
