@@ -53,6 +53,7 @@ body{
     height: var(--bar-height);
     background: var(--sidebar-foreground);
     border-radius: 9999px;
+    transform-origin: left center;
     transition: opacity var(--animation-timing) , width var(--animation-timing);
 }
 
@@ -64,6 +65,12 @@ body{
     pointer-events: none;
 }
 
+.hamburger-menu:has(input:checked)::before{
+    rotate: 45deg;
+}
+.hamburger-menu:has(input:checked)::after{
+    rotate: -45deg;
+}
 .hamburger-menu input:checked{
     opacity: 0;
     width: 0;
