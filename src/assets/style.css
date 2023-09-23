@@ -314,16 +314,20 @@ form{
     position: relative;
 }
 
-.task label::after{
+.task{
+    position: relative;
+}
+
+.task::after{
     content: "";
     position: absolute;
     left: 0;
     right:0;
-    bottom: -50%;
+    bottom: 0;
     height: 1px;
     background: #333;
     width: 100%;
-    opacity: 0.2;
+    opacity: 0.1;
     
 }
 .custom-checkbox{
@@ -347,4 +351,23 @@ form{
     transform: scale(1.3);
     border:2px solid var(--mainColor)
     
+}
+
+.task-list-container [type="checkbox"]:checked + label .custom-checkbox{
+    background-color: var(--btnMain);
+    border-color: var(--mainColor);
+}
+
+.task-list-container [type="checkbox"]:checked + label{
+    opacity: 0.5;
+
+}
+
+.task-list-container [type="checkbox"]:checked + label::after{
+    content: "";
+    position: absolute;
+    height: 1.5px;
+    background: #333;
+    width: 100%;
+
 }
