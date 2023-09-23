@@ -14,7 +14,7 @@
     
     /* height/width variables */
         --bar-height:8px;
-        --bar-width:60px;
+        --bar-width:50px;
         --hamburger-gap:6px;
         --hamburger-margin:10px;
         --hamburger-height:calc(var(--bar-height) *3 + var(--hamburger-gap) * 2);
@@ -56,7 +56,7 @@ body{
     background: var(--sidebar-foreground);
     border-radius: 9999px;
     transform-origin: left center;
-    transition: opacity var(--animation-timing) , width var(--animation-timing);
+    transition: opacity var(--animation-timing) , width var(--animation-timing), rotate var(--animation-timing), translate var(--animation-timing);
 }
 
 .hamburger-menu input{
