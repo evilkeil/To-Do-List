@@ -97,7 +97,10 @@ body{
     translate: -100%;
     
 }
-
+.hamburger-menu:has(input:checked){
+    --sidebar-foreground:white;
+    --sidebar-background:#333;
+}
 
 .hamburger-menu:has(input:checked) ~ .sidebar{
     translate: 0%;
