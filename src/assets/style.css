@@ -240,12 +240,30 @@ position: relative;
 
 /* input feild styles */
 
+form{
+    display: flex;
+}
 .new-input{
     background: transparent;
     border: 0;
     border-bottom: 1px solid var(--sidebar-foreground);
+    color: inherit;
+    font-size: inherit;
+    order: 2;
 }
 
 #add-project{
     border-bottom: 1px solid var(--btnScondary);
+    order: 2;
 }
+
+.btn{
+    background: 0;
+    border: 0;
+    padding: 0;
+}
+
+.btn:hover{
+    cursor: pointer;
+}
+

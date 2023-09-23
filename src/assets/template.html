@@ -19,8 +19,10 @@
             <li class="project">Sports</li>
             <li class="project">Work</li>
         </ul>
-        <input type="text" aria-label="add new project" id="add-project" placeholder="add a new Project" class="new-input">
-        <button class="add-project-btn">+</button>
+        <form class="project-add-form">
+            <input type="text" aria-label="add new project" id="add-project" placeholder="add a new Project" class="new-input">
+            <button class="add-project-btn btn">+</button>
+        </form>
     </div>
     <div class="task-list-container">
         <div class="task-list-header">
@@ -50,13 +52,13 @@
                 </label>
             </div>
         </div>
-        <div class="task-add">
+        <form class="task-add">
             <input type="text" aria-label="add a new task" id="task-add" placeholder="Add a new Task" class="new-input">
-            <button id="add-task-btn">+</button>
-        </div>
+            <button id="add-task-btn" class="btn">+</button>
+        </form>
         <div class="delete-btns">
-            <button id="delete-project">Delete Project</button>
-            <button id="delete-completed-tasks">Remove Completed Tasks</button>
+            <button id="delete-project" class="btn">Delete Project</button>
+            <button id="delete-completed-tasks" class="btn">Remove Completed Tasks</button>
         </div>
 
     </div>
