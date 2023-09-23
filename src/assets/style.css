@@ -84,14 +84,24 @@ body{
 }
 
 .sidebar{
-    translate: -100%;
+ transition: translate var(--animation-timing);
+  
+    padding:0.5rem 1rem;
     padding-top: calc(var(--hamburger-height) + var(--hamburger-margin) + 1rem );
     position: fixed;
     border: 1px solid black;
-    height: 100%;
+    min-height: 100vh;
+    min-width: 25%;
+    background-color: var(--sidebar-foreground);
+    color:var(--btnMain);
+    translate: -100%;
+    
 }
 
 
+.hamburger-menu:has(input:checked) ~ .sidebar{
+    translate: 0%;
+}
 /* grid styles and placement*/
 
 body{
