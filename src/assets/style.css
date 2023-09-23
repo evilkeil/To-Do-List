@@ -236,3 +236,16 @@ position: relative;
     transform: scale(1);
     transform-origin: left;
 }
+
+
+/* input feild styles */
+
+.new-input{
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid var(--sidebar-foreground);
+}
+
+#add-project{
+    border-bottom: 1px solid var(--btnScondary);
+}
