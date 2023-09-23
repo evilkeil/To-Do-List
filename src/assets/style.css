@@ -276,3 +276,27 @@ form{
     color: var(--btnMain);
 }
 
+#add-task-btn{
+    font-size: 1.5rem;
+    margin-right: 5px;
+}
+
+#add-task-btn:hover{
+    color: var(--btnScondary);
+}
+
+.delete{
+    border: 1px solid var(--textColor);
+    background-color: var(--btnMain);
+    border-radius: 15px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+
+}
+
+.delete:hover{
+    background-color: var(--btnScondary);
+}
