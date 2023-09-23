@@ -267,3 +267,12 @@ form{
     cursor: pointer;
 }
 
+.add-project-btn {
+    font-size: 2rem;
+    margin-right: 5px;
+}
+
+.add-project-btn:hover{
+    color: var(--btnMain);
+}
+
