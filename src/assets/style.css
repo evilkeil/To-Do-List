@@ -363,11 +363,20 @@ form{
 
 }
 
-.task-list-container [type="checkbox"]:checked + label::after{
+.task label::after{
     content: "";
     position: absolute;
     height: 1.5px;
+    left: 0;
+    right: 0;
     background: #333;
     width: 100%;
+    transform: scale(0);
+    transform-origin: right;
+    transition: transform 300ms ease-in-out;
+}
 
+.task-list-container [type="checkbox"]:checked + label::after{
+    transform: scale(1);
+    transform-origin: left;
 }
