@@ -82,3 +82,36 @@ body{
     width: 0;
     
 }
+
+.sidebar{
+    translate: -100%;
+    padding-top: calc(var(--hamburger-height) + var(--hamburger-margin) + 1rem );
+    position: fixed;
+    border: 1px solid black;
+    height: 100%;
+}
+
+
+/* grid styles and placement*/
+
+body{
+    display: grid;
+    grid:
+        "header header header header" 100px
+        ".....  tasklist tasklist ...." auto/
+        1fr minmax(300px,500px) minmax(300px,500px) 1fr
+        
+    ;
+}
+.header{
+    /* border: 1px solid black; */
+    grid-area: header;
+    text-align: center;
+    background-color: var(--secondaryColor);
+    
+}
+
+.task-list{
+    border: 1px solid black;
+    grid-area: tasklist;
+}
