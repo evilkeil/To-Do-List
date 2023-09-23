@@ -23,6 +23,7 @@
     /* time variables */
 
     --animation-timing:200ms ease-in-out;
+    --project-timing:300ms ease-in;
 }
 
 body{
@@ -211,4 +212,27 @@ body{
 
 .project-list li:hover{
     cursor: pointer;
+}
+
+.project{
+position: relative;
+}
+
+.project:after{
+   content: "";
+   position: absolute; 
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   height: 2px;
+   background-color: var(--secondaryColor);
+
+   transform: scale(0);
+   transform-origin: right;
+   transition: transform var(--project-timing);
+}
+
+.project:hover::after{
+    transform: scale(1);
+    transform-origin: left;
 }
