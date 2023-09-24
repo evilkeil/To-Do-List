@@ -133,6 +133,12 @@ body{
     
 }
 
+.task-count{
+    width: 200px;
+}
+.task-header-title{
+    width: 500px;
+}
 .task-list-container{
     background-color: var(--secondaryColor);
     border: 1px solid black;
