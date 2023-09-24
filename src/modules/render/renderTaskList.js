@@ -1,4 +1,10 @@
+import { taskList } from "../cache/domElements";
+import clearList from "./clearList";
+
 export default function renderTaskList(obj){
-    const taskList = obj.tasks;
-    
+    clearList(taskList);
+    const tasks = obj.tasks;
+    tasks.forEach(task => {
+        
+    });
 }
