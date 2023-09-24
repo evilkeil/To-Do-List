@@ -1,16 +1,20 @@
 import './assets/style.css';
+import GetStorageItems from './modules/storage/getStorage';
+import setStorageItem from './modules/storage/setStorage';
 
 
 const projectContainer = document.querySelector('[data-projectList]');
 const projectForm = document.querySelector('[data-addProjectForm]');
 const projectInput =document.querySelector('[data-project-input]');
 
-let projectList = [];
+const PROJECT_KEY = "todo.projectlist";
 
-{/* <li class="project">Sports</li> */}
+let projectList = GetStorageItems(PROJECT_KEY) || [];
+
+
 
 function renderProjectList(){
-    clearList(projectList);
+    clearList(projectContainer);
     projectList.forEach(project =>{
         const li = document.createElement('li');
         li.classList.add('project');
@@ -32,6 +36,7 @@ projectForm.addEventListener('submit',(e)=>{
     if(projectInput.value === null ||projectInput.value === "" ) return;
     const newProject = createProject(projectInput.value);
     projectList.push(newProject);
+    setStorageItem(PROJECT_KEY,projectList);
     renderProjectList()
     projectForm.reset()
 
