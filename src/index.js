@@ -1,5 +1,5 @@
 import './assets/style.css';
-import { PROJECT_KEY } from './modules/cache/storageKeys';
+import { PROJECT_KEY, PROJECT_SELECTED_KEY } from './modules/cache/storageKeys';
 import attachEventListners from './modules/eventListeners/attachEventListners';
 import renderProjectList from './modules/render/renderProjectList';
 import GetStorageItems from './modules/storage/getStorage';
@@ -10,8 +10,9 @@ import GetStorageItems from './modules/storage/getStorage';
 
 
 let projectList = GetStorageItems(PROJECT_KEY) || [];
+let selectedProject = GetStorageItems(PROJECT_SELECTED_KEY);
 
 
 
-attachEventListners(projectList)
-renderProjectList(projectList);
+attachEventListners(projectList,selectedProject);
+renderProjectList(projectList,selectedProject);
