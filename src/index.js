@@ -1,17 +1,28 @@
 import './assets/style.css';
 
-const checkbox = document.getElementById('toggle');
 
-const input = checkbox.value;
+const projectContainer = document.querySelector('[data-projectList]');
 
-checkbox.addEventListener('change',function(e){
-    if (checkbox.checked) {
-        // Checkbox is checked
-        console.log('Checkbox is checked');
-        // You can perform additional actions here
-    } else {
-        // Checkbox is unchecked
-        console.log('Checkbox is unchecked');
-        // You can perform additional actions here
+let projectList = ["studes","sports","Javascript"];
+
+{/* <li class="project">Sports</li> */}
+
+function renderProjectList(){
+    clearList(projectList);
+    projectList.forEach(project =>{
+        const li = document.createElement('li');
+        li.classList.add('project');
+        li.innerText=project;
+        projectContainer.appendChild(li);
+        
+    })
+
+}
+
+function clearList(element){
+    while(element.firstChild){
+        element.removeChild(element.firstChild);
     }
-})
+}
+
+renderProjectList();
