@@ -3,9 +3,9 @@ export default function createProject(name){
         name:name,
         id:Date.now().toString(),
         tasks:[{
-            name:"odin",
+            name:"test",
             id:1,
-            complete:false
+            complete:true
         },
        
     ],

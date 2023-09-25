@@ -30,27 +30,6 @@
             <p class="task-count" data-task-remaining>3 Tasks Remaining</p>
         </div>
         <div class="task-list" data-task-list>
-            <div class="task">
-                <input type="checkbox" name="" id="task-1">
-                <label for="task-1">
-                    <span class="custom-checkbox"></span>
-                    study JavaScript
-                </label>
-            </div>
-            <div class="task">
-                <input type="checkbox" name="" id="task-2">
-                <label for="task-2">
-                    <span class="custom-checkbox"></span>
-                    study React
-                </label>
-            </div>
-            <div class="task">
-                <input type="checkbox" name="" id="task-3">
-                <label for="task-3">
-                    <span class="custom-checkbox"></span>
-                    study CSS
-                </label>
-            </div>
         </div>
         <form class="task-add">
             <input type="text" aria-label="add a new task" id="task-add" placeholder="Add a new Task" class="new-input">
@@ -62,6 +41,14 @@
         </div>
 
     </div>
- 
+    <template id="template">
+        <div class="task">
+            <input type="checkbox" >
+            <label for="">
+                <span class="custom-checkbox"></span>
+                
+            </label>
+        </div>
+    </template>
 </body>
 </html>
