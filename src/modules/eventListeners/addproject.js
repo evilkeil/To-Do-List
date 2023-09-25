@@ -1,7 +1,7 @@
 import { projectForm, projectInput } from "../cache/domElements";
 import { PROJECT_KEY, PROJECT_SELECTED_KEY } from "../cache/storageKeys";
 import createProject from "../factoryFunctions/createProject";
-import renderProjectList from "../render/renderProjectList";
+import render from "../render/render";
 import GetStorageItems from "../storage/getStorage";
 import setStorageItem from "../storage/setStorage";
 
@@ -16,7 +16,7 @@ export default function addProject(arr,selected){
         setStorageItem(PROJECT_KEY,arr);
         selected = newProject.id;
         setStorageItem(PROJECT_SELECTED_KEY,selected);
-        renderProjectList(arr,selected);
+        render(arr,selected);
         projectForm.reset()
     
         

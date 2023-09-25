@@ -9,6 +9,7 @@ export const projectDeleteBtn = document.querySelector('[ data-delete-project]')
 export const taskTitle = document.querySelector('[data-task-title]');
 export const taskRemaining = document.querySelector('[data-task-remaining]');
 export const taskList = document.querySelector('[data-task-list]');
+export const taskContainer = document.querySelector('[data-task-container]');
 
 //task template
 

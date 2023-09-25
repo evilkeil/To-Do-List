@@ -1,6 +1,7 @@
 import { projectDeleteBtn } from "../cache/domElements";
 import { PROJECT_KEY, PROJECT_SELECTED_KEY } from "../cache/storageKeys";
-import renderProjectList from "../render/renderProjectList";
+import render from "../render/render";
+
 import GetStorageItems from "../storage/getStorage";
 import setStorageItem from "../storage/setStorage";
 
@@ -22,6 +23,7 @@ export default function deleteProject() {
         setStorageItem(PROJECT_SELECTED_KEY, null);
 
         // Render the updated project list
-        renderProjectList(newArray, null);
+        
+        render(newArray, null);
     });
 }
