@@ -14,3 +14,9 @@ export const taskContainer = document.querySelector('[data-task-container]');
 //task template
 
 export const template = document.getElementById('template');
+
+
+//add task
+
+export const taskInput = document.querySelector('[data-add-task-input]');
+export const taskForm  = document.querySelector('[data-add-task-form]');
