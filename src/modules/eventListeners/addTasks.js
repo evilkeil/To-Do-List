@@ -21,9 +21,8 @@ export default function addTask(){
                 
             }
         });
-        console.log(arr);
        setStorageItem(PROJECT_KEY,arr);
        render(arr,selected);
-    
+        taskForm.reset();
     })
 }
