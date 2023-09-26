@@ -20,3 +20,8 @@ export const template = document.getElementById('template');
 
 export const taskInput = document.querySelector('[data-add-task-input]');
 export const taskForm  = document.querySelector('[data-add-task-form]');
+
+
+//delete task
+
+export const deleteTaskBtn = document.querySelector("[data-delete-tasks]");
